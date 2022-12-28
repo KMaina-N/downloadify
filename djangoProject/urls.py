@@ -19,4 +19,6 @@ from ytdl import views
 
 urlpatterns = [
     path('', views.download_video),
+    # path('',views.home.as_view(),name="home"),
+    # path('',views.home,name="home"),
 ]

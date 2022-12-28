@@ -25,8 +25,8 @@ SECRET_KEY = '#r*6fh@d&_-_$=xai$jky0h^n(+y4s5jiu-4&w^1dkz=ex(7g2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['downloadify.herokuapp.com']
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['downloadify.herokuapp.com']
 
 
 # Application definition
@@ -132,12 +132,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# CORS_REPLACE_HTTPS_REFERER      = False
-# HOST_SCHEME                     = "http://"
-# SECURE_PROXY_SSL_HEADER         = None
-# SECURE_SSL_REDIRECT             = False
-# SESSION_COOKIE_SECURE           = False
-# CSRF_COOKIE_SECURE              = False
-# SECURE_HSTS_SECONDS             = None
-# SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
-# SECURE_FRAME_DENY               = False
+CORS_REPLACE_HTTPS_REFERER      = True
+HOST_SCHEME                     = "https://"
+SECURE_PROXY_SSL_HEADER         = None
+SECURE_SSL_REDIRECT             = False
+SESSION_COOKIE_SECURE           = False
+CSRF_COOKIE_SECURE              = False
+SECURE_HSTS_SECONDS             = None
+SECURE_HSTS_INCLUDE_SUBDOMAINS  = False
+SECURE_FRAME_DENY               = False
